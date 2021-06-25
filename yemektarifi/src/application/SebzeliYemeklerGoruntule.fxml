@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="panel" prefHeight="449.0" prefWidth="702.0" style="-fx-background-color: #FFF0F5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SebzeliYemeklerGoruntule">
+   <children>
+      <Button fx:id="menuyedon" layoutX="48.0" layoutY="34.0" mnemonicParsing="false" onAction="#menuyeDon" text="menüye dön" />
+      <TableView fx:id="sebzeliyemeklerListele" layoutX="-1.0" layoutY="159.0" prefHeight="290.0" prefWidth="826.0">
+        <columns>
+          <TableColumn fx:id="tTarifAdi" prefWidth="244.0" text="Tarif Adi" />
+          <TableColumn fx:id="tTarifDetayi" prefWidth="254.0" text="Tarif Detayi" />
+            <TableColumn id="tCesit" fx:id="tCesit" prefWidth="161.0" text="Cesit" />
+            <TableColumn fx:id="tMalzemeListesi" prefWidth="166.0" text="Malzeme Listesi" />
+        </columns>
+      </TableView>
+      <Button fx:id="sebzeSil" layoutX="190.0" layoutY="34.0" mnemonicParsing="false" onAction="#sebzeSil" text="sil" />
+      <Button fx:id="sebzeDuzenle" layoutX="264.0" layoutY="34.0" mnemonicParsing="false" onAction="#sebzeDuzenle" text="düzenle" />
+      <TextField fx:id="txtAramaYap" layoutX="370.0" layoutY="34.0" promptText="Tarif Ara" />
+      <ImageView fitHeight="71.0" fitWidth="72.0" layoutX="577.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@arama-butonu-png-1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="panel" prefHeight="422.0" prefWidth="819.0" style="-fx-background-color: #FFF0F5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PizzaTarifiGoruntule">
+   <children>
+      <TableView fx:id="pizzatarifiListele" layoutX="-14.0" layoutY="162.0" prefHeight="260.0" prefWidth="832.0">
+        <columns>
+          <TableColumn fx:id="tTarifAdi" prefWidth="243.0" text="Tarif Adi" />
+          <TableColumn fx:id="tTarifDetayi" prefWidth="224.0" text="Tarif Detayi" />
+            <TableColumn fx:id="tCesit" prefWidth="214.0" text="Cesit" />
+            <TableColumn fx:id="tMalzemeListesi" prefWidth="150.0" text="Malzeme Listesi" />
+        </columns>
+      </TableView>
+      <Button fx:id="menuyedon" layoutX="29.0" layoutY="44.0" mnemonicParsing="false" onAction="#menuyeDon" text="menüye dön" />
+      <Button fx:id="pizzaSil" layoutX="171.0" layoutY="44.0" mnemonicParsing="false" onAction="#pizzaSil" text="sil" />
+      <Button fx:id="pizzaDuzenle" layoutX="257.0" layoutY="44.0" mnemonicParsing="false" onAction="#pizzaDuzenle" text="düzenle" />
+      <TextField fx:id="txtAramaYap" layoutX="369.0" layoutY="44.0" promptText="Tarif Ara" />
+      <ImageView fitHeight="73.0" fitWidth="65.0" layoutX="574.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@arama-butonu-png-1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
